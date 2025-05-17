@@ -364,6 +364,10 @@ body {
     border: 2px solid #474d54;
 }
 
+.trending-card>.profile>.text {
+    line-height: 1.5rem;
+}
+
 .trending-card>.profile>.text>.username {
     color: #f0f0f0;
     font-size: 1rem;
