@@ -376,6 +376,7 @@ body {
 .announcements>.description {
     font-size: 1rem;
     color: var(--accent-text-color);
+    line-height: 1.25rem;
     margin-top: 0.4rem;
 }
 
