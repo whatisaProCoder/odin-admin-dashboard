@@ -238,7 +238,7 @@ body {
     flex-direction: column;
     gap: 15px;
     justify-content: space-between;
-    background-color: #2f353c;
+    background-color: #2a2f34;
     padding: 2rem 1.5rem;
     border-radius: 1rem;
     border-style: solid;
@@ -293,7 +293,7 @@ body {
     flex-direction: column;
     gap: 15px;
     justify-content: space-between;
-    background-color: #2f353c;
+    background-color: #2a2f34;
     padding: 2rem 1.5rem;
     border-radius: 1rem;
     overflow: none;
@@ -343,7 +343,7 @@ body {
     flex-direction: column;
     gap: 15px;
     justify-content: space-between;
-    background-color: #2f353c;
+    background-color: #2a2f34;
     padding: 2rem 1.5rem;
     border-radius: 1rem;
     overflow: none;
