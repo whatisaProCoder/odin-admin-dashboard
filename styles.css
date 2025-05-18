@@ -1,13 +1,51 @@
 :root {
-    --primary-color: #26252d;
-    --primary-color-lighter: rgb(51, 54, 60);
-    --primary-color-darker: #1f1f27;
-    --background-color: #151517;
-    --accent-color: rgb(97, 150, 255);
-    --border-color: #363b42;
-    --main-text-color: #dddddd;
-    --main-text-hover-color: #adaeb7;
-    --accent-text-color: #b9b9b9;
+    --primary-color: #ffffff;
+    --primary-color-lighter: #f5f7fa;
+    --primary-color-darker: #e3e6eb;
+    --background-color: #f0f4f8;
+    --accent-color: #6c63ff;
+    --border-color: #e0e6ed;
+    --main-text-color: #232946;
+    --main-text-hover-color: #6c63ff;
+    --accent-text-color: #595959;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #181a20;
+        --primary-color-lighter: #23262f;
+        --primary-color-darker: #101217;
+        --background-color: #13151a;
+        --accent-color: #8b7cff;
+        --border-color: #23262f;
+        --main-text-color: #f3f6fa;
+        --main-text-hover-color: #8b7cff;
+        --accent-text-color: #b0b3c6;
+    }
+}
+
+[data-theme="light"] {
+    --primary-color: #ffffff;
+    --primary-color-lighter: #f5f7fa;
+    --primary-color-darker: #e3e6eb;
+    --background-color: #f0f4f8;
+    --accent-color: #6c63ff;
+    --border-color: #e0e6ed;
+    --main-text-color: #232946;
+    --main-text-hover-color: #6c63ff;
+    --accent-text-color: #595959;
+}
+
+[data-theme="dark"] {
+    --primary-color: #181a20;
+    --primary-color-lighter: #23262f;
+    --primary-color-darker: #101217;
+    --background-color: #13151a;
+    --accent-color: #8b7cff;
+    --border-color: #23262f;
+    --main-text-color: #f3f6fa;
+    --main-text-hover-color: #8b7cff;
+    --accent-text-color: #b0b3c6;
 }
 
 * {
@@ -419,4 +457,26 @@ body {
     border-top-width: 2px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: var(--accent-color);
+}
+
+.theme-toggle>.icon {
+    color: var(--main-text-color);
+    fill: currentColor;
+    height: 1.6rem;
 }
