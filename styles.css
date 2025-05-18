@@ -8,6 +8,7 @@
     --main-text-color: #232946;
     --main-text-hover-color: #6c63ff;
     --accent-text-color: #595959;
+    --white: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -482,6 +483,12 @@ body {
 
 .theme-toggle>.icon {
     color: var(--main-text-color);
+    fill: currentColor;
+    height: 1.6rem;
+}
+
+.theme-toggle:hover>.icon {
+    color: var(--white);
     fill: currentColor;
     height: 1.6rem;
 }
