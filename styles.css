@@ -262,9 +262,9 @@ body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 2.25rem 2rem;
+    grid-template-columns: 3fr minmax(25ch, 1fr);
+    padding: 2.25rem 20px;
+    padding-left: 2rem;
     gap: 20px;
 }
 
@@ -330,9 +330,16 @@ body {
     height: 1.6rem;
 }
 
+.side-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2.5rem;
+}
+
 .announcements-section {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    width: 100%;
 }
 
 .announcements-section>.title {
@@ -379,11 +386,9 @@ body {
     border-color: var(--border-color);
 }
 
-
-
 .trending-section {
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    width: 100%;
 }
 
 .trending-section>.title {
