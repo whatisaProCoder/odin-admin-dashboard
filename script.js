@@ -1,6 +1,14 @@
 const toggleButton = document.querySelector('.theme-toggle');
 const htmlElement = document.documentElement;
 
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    htmlElement.setAttribute('data-theme', savedTheme);
+} else {
+    htmlElement.setAttribute('data-theme', prefersDarkScheme ? 'dark' : 'light');
+}
+
 toggleButton.addEventListener('click', () => {
     console.log("Toggle Theme Button Clicked!");
 
