@@ -119,6 +119,7 @@ body {
     color: var(--main-text-color);
     font-size: 1.4rem;
     font-weight: 500;
+    user-select: none;
 }
 
 .menu>.item>.text:hover {
