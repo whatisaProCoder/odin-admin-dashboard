@@ -232,6 +232,10 @@ body {
     font-size: 1.4rem;
 }
 
+.profile-id {
+    color: var(--accent-color);
+}
+
 .button-group {
     display: flex;
     align-items: center;
