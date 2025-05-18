@@ -181,7 +181,7 @@ body {
     margin-right: 2rem;
 }
 
-.profile-section>.icon {
+.notifications>.icon {
     color: var(--main-text-color);
     fill: currentColor;
     height: 1.6rem;
