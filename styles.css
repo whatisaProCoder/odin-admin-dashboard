@@ -308,6 +308,11 @@ body {
     border-bottom-left-radius: 0;
     overflow: none;
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
+    transition: border-color ease 0.3s;
+}
+
+.card:hover {
+    border-color: var(--accent-color);
 }
 
 .card>.text>.title {
